@@ -1,7 +1,7 @@
 # Desafio técnico - Sistema de gatinhos
 ### Projeto criado como desafio técnico para a empresa Inovadora sistemas
 1. O sistema foi feito num ambiente Docker e com o Framework Laravel
-2. O sistema realiza a busca de gatinhos listados na api ![TheCatsApi]{https://thecatapi.com/}
+2. O sistema realiza a busca de gatinhos listados na api ![TheCatsApi](https://thecatapi.com/)
 3. Para acessar o sistema, deverá ser feito um login, realizando o cadastro previamente.
 
 ### Obs1.: Deverá ter o Docker instalado.
