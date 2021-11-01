@@ -1,0 +1,36 @@
+---
+version: '3'
+
+networks:
+  default:
+    external:
+      name: ramias
+
+services:
+  mysql:
+    image: mysql:latest
+    container_name: mysql_laravel
+    restart: unless-stopped
+    tty: true
+    environment:
+      MYSQL_DATABASE: laravel_db
+      MYSQL_USER: laravel_db
+      MYSQL_PASSWORD: 123456
+      MYSQL_ROOT_PASSWORD: 123456
+      SERVICE_TAGS: dev
+      SERVICE_NAME: mysql
+    volumes:
+      - mysql:/var/lib/mysql
+
+  redis:
+    image: redis
+    container_name: redis_laravel
+
+  memcached:
+    image: memcached:latest
+    container_name: memcached_laravel
+
+volumes:
+  mysql:
+
+...

@@ -1,0 +1,9 @@
+mysql/
+vendor/
+.vscode/
+composer.lock
+.phpunit.result.cache
+node_modules/
+test-reports/
+test-results/
+coverage/

@@ -1,0 +1,268 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #286CA3;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.container img {
+    width: 200px;
+}
+
+.page-not-found {
+    margin: auto;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.form-login-register {
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 20px auto;
+}
+
+.form-login-register form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 15px;
+}
+
+.form-login-register form input {
+    padding: 8px;
+    width: 300px;
+}
+
+.form-login-register form input[type=submit] {
+    background-color: #286CA3;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.form-login-register form input[type=submit]:hover {
+    background-color: rgba(40,108,163,.7);
+}
+
+.form-login-register form a {
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.main {
+    width: 100%;
+}
+
+.main .welcome {
+    padding: 10px 0px;
+}
+
+.main .title-list {
+    text-align: center;
+    margin: 15px auto;
+}
+
+.top-form-btn-clean {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.form-search-cat {
+    margin: 15px 0px;
+}
+
+.form-search-cat input {
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.form-search-cat input[type=search] {
+    width: 300px;
+}
+
+.form-search-cat input[type=submit] {
+    background-color: #286CA3;
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: .7s;
+}
+
+.form-search-cat input[type=submit]:hover {
+    background-color: rgba(40,108,163,.7);
+}
+
+.btn-back-edit {
+    background-color: #286CA3;
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: .7s;
+    padding: 8px;
+    margin: 15px auto 15px 0px;
+    text-decoration: none;
+}
+
+.btn-back-edit:hover {
+    background-color: rgba(40,108,163,.7);
+}
+
+.form-edit-cat {
+    width: 400px;
+    margin: 15px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.img-edit {
+    border-radius: 40px;
+    margin-bottom: 15px;
+}
+
+.form-edit-cat form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.form-edit-cat form input[type=text], textarea {
+    padding: 8px;
+    width: 100%;
+    margin: 5px 0px 25px 0px;
+    box-sizing: border-box;
+}
+
+.form-edit-cat input[type=submit] {
+    background-color: #286CA3;
+    color: #FFF;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: .7s;
+    padding: 10px;
+    width: 100%;
+    margin: 5px auto 20px auto;
+    font-size: 14px;
+}
+
+.form-edit-cat input[type=submit]:hover {
+    background-color: rgba(40,108,163,.7);
+}
+
+.clean-list-cats {
+    padding: 8px 20px;
+    background-color: #da0521;
+    border: none;
+    border-radius: 5px;
+    color: #FFF;
+    text-decoration: none;
+}
+
+.clean-list-cats:hover {
+    background-color: #da0521b6;
+}
+
+.container-card-cat {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-cat {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border: 1px solid #286CA3;
+    border-radius: 10px;
+    margin: 10px;
+    width: 250px;
+    padding: 10px;
+}
+
+.card-cat-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card-cat-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.edit-cat {
+    background-color: #286CA3;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.edit-cat:hover {
+    background-color: rgba(40,108,163,.85);
+}
+
+.delete-cat {
+    background-color: #da0521;
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #FFF;
+}
+
+.delete-cat:hover {
+    background-color: rgba(218,5,33,.85);
+}
+
+.info-cat {
+    margin-bottom: 15px;
+}
+
+.info-cat h3 {
+    text-align: center;
+    margin: 10px;
+}
+
+.info-cat p {
+    text-align: justify;
+}
+
+.info-cat .last-edit {
+    width: 100%;
+    font-size: 12px;
+    border-top: 1px solid #ccc;
+    padding-top: 7px;
+    margin-top: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    line-height: 100px;
+}
