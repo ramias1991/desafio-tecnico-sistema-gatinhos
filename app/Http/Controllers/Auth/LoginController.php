@@ -48,7 +48,7 @@ class LoginController extends Controller
 
     public function authenticate(Request $request){
         $creds = $request->only(['email', 'password']);
-        $creds_jwt = Http::asForm()->post("https://" . env('LOCAL_IP') ."/api/login", $creds);
+        $creds_jwt = Http::asForm()->post("http://" . env('LOCAL_IP') ."/api/login", $creds);
 
         if(Auth::attempt($creds) && $creds_jwt) {
             $creds_jwt = json_decode($creds_jwt);

@@ -9,6 +9,8 @@ RUN chmod uga+x /usr/local/bin/install-php-extensions && sync && \
 
 RUN docker-php-ext-install mysqli pdo pdo_mysql
 
+RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer && chmod +x /usr/local/bin/composer
+
 RUN apk --no-cache add pcre-dev ${PHPIZE_DEPS} \
   && pecl install xdebug \
   && docker-php-ext-enable xdebug \
